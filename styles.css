@@ -45,3 +45,7 @@ form button {
     margin-top: 20px;
     align-self: flex-start;
 }
+
+form span {
+    color: red;
+}
