@@ -1,3 +1,9 @@
 * {
     font-family: 'Courier New', Courier, monospace;
 }
+
+#resume-content {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+}
