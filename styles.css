@@ -40,3 +40,8 @@
     border-bottom: 1px solid black;
     margin-top: 10px;
 }
+
+form button {
+    margin-top: 20px;
+    align-self: flex-start;
+}
