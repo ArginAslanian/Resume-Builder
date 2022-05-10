@@ -7,3 +7,26 @@
     text-align: center;
     padding: 20px 0;
 }
+
+#inputs {
+    max-width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    padding: 25px 25px;
+    margin: 0 auto;
+}
+
+#inputs label {
+    float: left;
+}
+
+#inputs input, select {
+    float: right;
+    width: 250px;
+    height: 30px;
+}
+
+.form-group {
+    clear: both;
+    padding: 10px 0;
+}
