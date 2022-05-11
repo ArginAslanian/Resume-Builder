@@ -1,5 +1,9 @@
 <?php
 
+    require('fpdf.php');
+    $pdf = new FPDF();
+    $pdf->AddPage();
+
     // Get all the required $_POST Data
     $name = $_POST['name'];
     $location = $_POST['location'];
