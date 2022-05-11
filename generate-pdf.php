@@ -17,6 +17,9 @@
     $desc = $_POST['desc'];
     $skills = $_POST['skills'];
 
+    // Set title to $name + Resume
+    $pdf->SetTitle($name . ' Resume');
+
     // Output on PDF file
 
     // BOLD
