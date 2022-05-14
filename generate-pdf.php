@@ -5,17 +5,25 @@
     $pdf->AddPage();
 
     // Get all the required $_POST Data
-    $name = $_POST['name'];
-    $location = $_POST['location'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $college = $_POST['college'];
-    $education = $_POST['education'];
-    $field = $_POST['field'];
-    $company = $_POST['company'];
-    $position = $_POST['position'];
-    $desc = $_POST['desc'];
-    $skills = $_POST['skills'];
+    $name = validate_input($_POST['name']);
+    $location = validate_input($_POST['location']);
+    $phone = validate_input($_POST['phone']);
+    $email = validate_input($_POST['email']);
+    $college = validate_input($_POST['college']);
+    $education = validate_input($_POST['education']);
+    $field = validate_input($_POST['field']);
+    $company = validate_input($_POST['company']);
+    $position = validate_input($_POST['position']);
+    $desc = validate_input($_POST['desc']);
+    $skills = validate_input($_POST['skills']);
+
+    // Input Validation function
+    function validate_input($input) {
+        $input = trim($input); // Remove white space, tabs, newline, etc..
+        $input = stripslashes($input); // Remove backlashes from user input data
+        $input = htmlspecialchars($input); // Remove html characters inputted
+        return $input;
+    }
 
     // Set title to $name + Resume
     $pdf->SetTitle($name . ' Resume');
